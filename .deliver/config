@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # 1. Give a name to your app
 
 APP="distrib_videos"
@@ -20,9 +22,9 @@ BUILD_AT="/tmp/edeliver/$APP/builds"
 
 # 5. Optionally specify the staging host
 
-# STAGING_HOSTS=$EC2_0
-# STAGING_USER=$USER
-# DELIVER_TO="/home/ubuntu"
+STAGING_HOSTS=$EC2_0
+STAGING_USER=$USER
+DELIVER_TO="/home/ubuntu"
  
 #6. Specify which host(s) the app is going to be deployed to
 
@@ -49,9 +51,9 @@ pre_erlang_get_and_update_deps() {
       
       mix deps.get
 
-      # npm install
+      npm install
       
-      # brunch build --production
+      brunch build --production
       
       APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phoenix.digest $SILENCE
     "
