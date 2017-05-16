@@ -49,9 +49,9 @@ pre_erlang_get_and_update_deps() {
       
       mix deps.get
 
-      npm install
+      # npm install
       
-      brunch build --production
+      # brunch build --production
       
       APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phoenix.digest $SILENCE
     "

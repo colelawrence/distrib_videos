@@ -3,6 +3,7 @@
 /db
 /deps
 /*.ez
+./.deliver/releases/
 
 # Generated on crash by the VM
 erl_crash.dump
