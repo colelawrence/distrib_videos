@@ -37,7 +37,7 @@ defmodule DistribVideos.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:edeliver, "~> 1.4.2"},
-     {:exrm, "~> 1.0.3"}]
+     {:distillery, "~> 1.4"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
